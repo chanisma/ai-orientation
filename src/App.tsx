@@ -514,22 +514,6 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
         </div>
-
-        {/* 안내 섹션 */}
-        <div className="mt-6 grid md:grid-cols-3 gap-4 text-sm">
-          <div className="rounded-2xl p-4 bg-white/70 border border-emerald-200">
-            <div className="font-semibold text-emerald-800 mb-1">수업 팁</div>
-            <p>오리엔테이션에서는 분야별 관심도 조사 → 프로젝트 토픽 매칭에 활용하세요.</p>
-          </div>
-          <div className="rounded-2xl p-4 bg-white/70 border border-emerald-200">
-            <div className="font-semibold text-emerald-800 mb-1">색감</div>
-            <p>푸른 하늘·초원 느낌의 파스텔 그라디언트를 기본 테마로 적용했습니다.</p>
-          </div>
-          <div className="rounded-2xl p-4 bg-white/70 border border-emerald-200">
-            <div className="font-semibold text-emerald-800 mb-1">저작권</div>
-            <p>영상·기사 링크는 원문 페이지로 이동합니다. 수업 중 시연용으로만 사용하세요.</p>
-          </div>
-        </div>
       </div>
     </div>
   );
