@@ -1,4 +1,3 @@
-
 import React, { useMemo, useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, ChevronLeft, ChevronRight, ExternalLink, Filter } from "lucide-react";
@@ -132,7 +131,7 @@ const slidesData = [
     imageUrl: null,
   },
 
-  // 건축/건설
+  // 건축/건설 (영상 교체 — 공식 Omniverse 채널)
   {
     id: "aec-omniverse",
     field: "건축/건설",
@@ -143,8 +142,8 @@ const slidesData = [
       "툴 간 장면 동기화",
       "시공 전 전 단계 검토",
     ],
-    videoUrl: "https://www.youtube.com/embed/lxQe0O2Qw_E?rel=0",
-    articleUrl: "https://www.nvidia.com/ko-kr/industries/aec/",
+    videoUrl: "https://www.youtube.com/embed/jm0h_f2C3xQ?rel=0", // 교체됨 (KPF Spotlight)
+    articleUrl: "https://www.nvidia.com/en-us/omniverse/",
     outputs: [],
     imageUrl: null,
   },
@@ -307,24 +306,7 @@ const slidesData = [
     imageUrl: null,
   },
 
-  // 교육
-  {
-    id: "edu-digital-textbook",
-    field: "교육",
-    title: "AI 디지털 교과서 — 2025 시범운영 확대",
-    subtitle: "수준·흥미 기반 맞춤 학습",
-    tagline: "요약·질문·피드백",
-    bullets: [
-      "시범학교 확대",
-      "국영수부터 적용",
-    ],
-    videoUrl: "https://www.youtube.com/embed/szdgGSLQKvw?rel=0",
-    articleUrl: "https://www.hani.co.kr/arti/society/school/1140618.html",
-    outputs: [
-      { label: "서울시교육청(쓰기평가)", url: "https://news.seoul.go.kr/economy/archives/546948" }
-    ],
-    imageUrl: null,
-  },
+  // (삭제됨) 교육 — AI 디지털 교과서 슬라이드 제거
 
   // 농업
   {
@@ -361,6 +343,102 @@ const slidesData = [
     outputs: [
       { label: "인터뷰(아주경제)", url: "https://www.ajunews.com/view/20250310085129347" },
       { label: "디지털 자산관리", url: "https://www.straightnews.co.kr/news/articleView.html?idxno=258010" }
+    ],
+    imageUrl: null,
+  },
+
+  // 신규: 웹툰
+  {
+    id: "webtoon-ai-painter",
+    field: "웹툰",
+    title: "네이버 웹툰 — AI 페인터(자동 채색)",
+    subtitle: "스케치 → 자동 채색",
+    tagline: "창작 반복작업 절감",
+    bullets: [
+      "스케치 업로드 후 자동 채색",
+      "추천·저작권 보호(툰 레이더)와 함께 고도화",
+    ],
+    videoUrl: "https://www.youtube.com/embed/7PSx43qaStE?rel=0",
+    articleUrl: "https://ai.webtoons.com/ko/painter/paint",
+    outputs: [
+      { label: "AI 페인터 바로가기", url: "https://ai.webtoons.com/ko/painter/paint" },
+      { label: "소개 기사(영문)", url: "https://koreajoongangdaily.joins.com/news/2025-03-06/business/tech/Naver-Webtoon-ready-to-fully-incorporate-AI-into-company-department-lead-says/2255011" }
+    ],
+    imageUrl: null,
+  },
+
+  // 신규: 게임/VR (요청한 영상 포함)
+  {
+    id: "game-reverse-turing",
+    field: "게임/VR",
+    title: "AI 사이에서 인간인 걸 들키면 안되는 게임",
+    subtitle: "Reverse Turing Test 실험 영상",
+    tagline: "VR·대화형 AI 실험",
+    bullets: [
+      "AI NPC와 인간 식별 게임",
+      "음성(STT/TTS)+LLM 활용",
+    ],
+    videoUrl: "https://www.youtube.com/embed/TM6MBhqWHrw?rel=0",
+    articleUrl: "https://blog.vive.com/us/reverse-turing-test-identifies-human-among-ai/",
+    outputs: [
+      { label: "Tamulur 채널", url: "https://www.youtube.com/@tamulur" },
+      { label: "itch.io 프로젝트", url: "https://tamulur.itch.io/" }
+    ],
+    imageUrl: null,
+  },
+
+  // 신규: 버튜버
+  {
+    id: "vtuber-vtube-studio",
+    field: "버튜버",
+    title: "VTuber 제작 — VTube Studio + Live2D + AI",
+    subtitle: "웹캠/모바일 트래킹·실시간 연동",
+    tagline: "크리에이터 실습용",
+    bullets: [
+      "VTube Studio로 라이브2D 모델 구동",
+      "AI 번역/자막·보이스 보조로 스트림 품질↑",
+    ],
+    videoUrl: "https://www.youtube.com/embed/6FZb04yMzhY?rel=0",
+    articleUrl: "https://denchisoft.com/",
+    outputs: [
+      { label: "VTS 매뉴얼", url: "https://github.com/DenchiSoft/VTubeStudio" },
+      { label: "NVIDIA Maxine(실시간 번역/Live Portrait)", url: "https://developer.nvidia.com/maxine" }
+    ],
+    imageUrl: null,
+  },
+
+  // 신규: 로봇 (Atlas)
+  {
+    id: "robot-atlas",
+    field: "로봇",
+    title: "Boston Dynamics Atlas — 전기식 휴머노이드",
+    subtitle: "강화학습·동적 조작",
+    tagline: "현실 작업 적용 연구",
+    bullets: [
+      "넓은 가동 범위·유연한 자세",
+      "부품 이동 등 작업 데모",
+    ],
+    videoUrl: "https://www.youtube.com/embed/29ECwExc-_M?rel=0",
+    articleUrl: "https://bostondynamics.com/atlas/",
+    outputs: [],
+    imageUrl: null,
+  },
+
+  // 신규: 로봇 (Digit)
+  {
+    id: "robot-digit",
+    field: "로봇",
+    title: "Agility Robotics Digit — 물류 현장 투입",
+    subtitle: "인간 협업형 휴머노이드",
+    tagline: "창고 피킹·이동",
+    bullets: [
+      "GXO·아마존 R&D 등 실증",
+      "반복 작업 자동화",
+    ],
+    videoUrl: "https://www.youtube.com/embed/AJpTpUqjgrY?rel=0",
+    articleUrl: "https://www.wsj.com/tech/ai/humanoid-robot-workers-ai-brain-08027439",
+    outputs: [
+      { label: "Agility Robotics 채널", url: "https://www.youtube.com/AgilityRobotics" }
     ],
     imageUrl: null,
   },
