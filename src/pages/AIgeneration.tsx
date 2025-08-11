@@ -61,8 +61,8 @@ const slidesData = [
   // 타이틀
   {
     id: "title",
-    field: "OT",
-    title: "인공지능 기초 — 오리엔테이션",
+    field: "",
+    title: "인공지능 기초 — 인공지능 시대",
     subtitle: "교과: 인공지능 기초 | 대상: 고등학생",
     tagline: "일상에서 느끼는 AI → 전공별 확장",
     bullets: [
@@ -413,7 +413,7 @@ export default function OrientationPage() {
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-xl bg-gradient-to-tr from-sky-400 to-emerald-400 shadow" />
-          <div className="font-semibold">AI 기초 OT — 분야 확장판</div>
+          <div className="font-semibold">인공지능 기초 - 인공지능 시대</div>
         </div>
         <div className="flex items-center gap-2">
           <button
