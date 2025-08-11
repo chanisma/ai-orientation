@@ -72,7 +72,7 @@ const slidesData = [
     videoUrl: null,
     articleUrl: null,
     outputs: [],
-    imageUrl: null,
+    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgarymarcus.substack.com%2Fp%2Fthe-latest-ai-scaling-graph-and-why&psig=AOvVaw1HzMJQL_vMG3tFvnIUZHYk&ust=1755012658625000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqGAoTCOic4OGJg48DFQAAAAAdAAAAABDXAQnull",
   },
 
   // 생명공학
